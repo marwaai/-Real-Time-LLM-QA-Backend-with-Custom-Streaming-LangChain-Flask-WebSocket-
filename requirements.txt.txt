@@ -1,0 +1,10 @@
+flask_socketio==5.3.6
+langchain==0.2.3
+langchain_community==0.2.4
+sentence-transformers==3.0.1
+ctransformers==0.2.27
+faiss-cpu==1.8.0
+Flask==2.2.5
+gunicorn==22.0.0
+gevent==24.2.1
+gevent-websocket==0.10.1
