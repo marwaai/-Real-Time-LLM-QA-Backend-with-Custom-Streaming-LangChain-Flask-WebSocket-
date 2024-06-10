@@ -16,7 +16,7 @@ from flask import Flask, request, jsonify
 app = Flask(__name__)
 socketio = SocketIO(app, cors_allowed_origins="*")
 persist_directory = "db"
-for root, dirs, files in os.walk(r"MEDEYE"):
+for root, dirs, files in os.walk(r"db/docs"):
         for file in files:
             if file.endswith("txt"):
                 print(file)
