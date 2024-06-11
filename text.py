@@ -11,13 +11,14 @@ from gevent import pywsgi
 from geventwebsocket.handler import WebSocketHandler
 from flask import Flask, request, jsonify
 from flask_socketio import SocketIO
-
+print("kkkkkllloo")
 # Initialize Flask app and SocketIO
 app = Flask(__name__)
 socketio = SocketIO(app, cors_allowed_origins="*")
 
 # Code for loading documents, creating embeddings, and setting up your model
 persist_directory = "db"
+print(persist_directory)
 for root, dirs, files in os.walk(r"db/docs"):
     for file in files:
         if file.endswith("txt"):
